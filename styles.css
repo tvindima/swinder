@@ -79,3 +79,28 @@ footer {
     background-color: #0a0909;
     color: #a58e3d;
 }
+
+/* Auth links styles */
+.site-header .container {
+    justify-content: space-between;
+}
+.logo-title {
+    display: flex;
+    align-items: center;
+}
+.auth-links {
+    display: flex;
+    gap: 15px;
+}
+.auth-link {
+    padding: 8px 16px;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 16px;
+}
+.auth-link:hover {
+    background-color: #d4af37;
+    color: #0d0c0c;
+}
