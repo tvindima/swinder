@@ -1,149 +1,173 @@
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #0d0c0c;
-  color: #d4af37;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0d0c0c;
+    color: #d4af37;
 }
 
+/* Header styles */
 .site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #0d0c0c;
+    background-color: #0d0c0c;
+    padding: 10px 0;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .logo-title {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-.logo-title img {
-  height: 40px;
-  margin-right: 10px;
-}
-
-.logo-title h1 {
-  margin: 0;
-  font-size: 24px;
+.logo {
+    height: 32px;
+    margin-right: 10px;
 }
 
 .auth-links {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .auth-link {
-  padding: 8px 16px;
-  border: 1px solid #d4af37;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #d4af37;
-  font-size: 16px;
+    padding: 6px 14px;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 14px;
 }
 
 .auth-link:hover {
-  background-color: #d4af37;
-  color: #0d0c0c;
+    background-color: #d4af37;
+    color: #0d0c0c;
 }
 
+/* Hero section */
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 40px 20px;
+    text-align: center;
+    padding: 40px 20px 60px;
+}
+
+.hero .container {
+    max-width: 960px;
+    margin: 0 auto;
 }
 
 .hero-logo-large {
-  width: 140px;
-  height: auto;
+    width: 120px;
+    display: block;
+    margin: 0 auto 15px;
 }
 
 .hero-title {
-  margin: 20px 0 10px;
-  font-size: 48px;
+    font-size: 48px;
+    margin: 10px 0 20px;
+    font-weight: bold;
 }
 
 .hero-auth {
-  display: flex;
-  gap: 20px;
-  margin: 20px 0;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.hero-auth a {
-  padding: 10px 24px;
-  border: 1px solid #d4af37;
-  border-radius: 5px;
-  color: #d4af37;
-  text-decoration: none;
-  font-size: 16px;
+.auth-btn {
+    padding: 8px 20px;
+    border: 1px solid #d4af37;
+    border-radius: 4px;
+    color: #d4af37;
+    text-decoration: none;
+    font-size: 16px;
 }
 
-.hero-auth a:hover {
-  background-color: #d4af37;
-  color: #0d0c0c;
+.auth-btn:hover {
+    background-color: #d4af37;
+    color: #0d0c0c;
 }
 
 .hero h2 {
-  font-size: 32px;
-  margin: 30px 0 10px;
+    font-size: 28px;
+    margin: 20px 0 10px;
 }
 
 .hero p {
-  font-size: 18px;
-  margin: 0 0 40px;
-  max-width: 600px;
+    font-size: 16px;
+    color: #b8a85f;
+    margin: 0 auto;
+    max-width: 400px;
 }
 
+/* Features section */
 .features {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 60px;
-  margin: 60px 20px;
+    padding: 60px 20px;
+    text-align: center;
 }
 
-.feature {
-  max-width: 600px;
-  text-align: center;
+.features .container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.features-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .feature h3 {
-  font-size: 28px;
-  margin-bottom: 10px;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #d4af37;
 }
 
 .feature p {
-  font-size: 18px;
-  margin: 0;
+    font-size: 16px;
+    color: #b8a85f;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
+/* Footer */
 footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #0d0c0c;
-  font-size: 14px;
-  color: #a58e3d;
+    text-align: center;
+    padding: 40px 20px;
+    color: #a58e3d;
+    font-size: 14px;
 }
 
-@media (max-width: 600px) {
-  .hero-logo-large {
-    width: 100px;
-  }
-  .hero-title {
-    font-size: 36px;
-  }
-  .hero h2 {
-    font-size: 26px;
-  }
-  .hero p {
-    font-size: 16px;
-  }
-  .feature h3 {
-    font-size: 24px;
-  }
-  .feature p {
-    font-size: 16px;
-  }
+/* Responsive adjustments */
+@media (min-width: 600px) {
+    .hero-logo-large {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    .hero-title {
+        font-size: 64px;
+    }
+    .auth-btn {
+        font-size: 18px;
+    }
+    .hero h2 {
+        font-size: 32px;
+    }
+    .hero p {
+        font-size: 18px;
+    }
+    .features-grid {
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 40px;
+    }
+    .feature p {
+        max-width: 300px;
+    }
 }
